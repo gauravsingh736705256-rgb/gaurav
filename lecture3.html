@@ -1,0 +1,178 @@
+ <img src="23.png" width="1500" height ="650">
+
+<center>
+  <h1>Lecture 3</font> &#9733;</h1>
+    <hr size="4" width="50%" align="center">
+    <h2>Video of expert so that you can understand easly</h2>
+    <table border="1" cellpadding="15" cellspacing="0" align="center">
+  <tr>
+    <td>
+      <a href="https://youtu.be/k78lNSAB8VY?si=zM_PnVtnCnif2pRd" target="_blank">
+        <button>Watch Lecture 3 Video</button>
+      </a><br><br>
+
+      <b>Timestamps:</b><br><br>
+      00:00 Introduction <br>
+      01:23 Understanding File Paths <br>
+      03:37 Types of File Paths <br>
+      05:21 Relative Path <br>
+      09:14 Code Example <br>
+      14:22 Absolute Path <br>
+      21:30 Note on Absolute Paths <br>
+      28:17 Note on Relative Paths <br>
+      32:15 Why Use Boilerplate Code <br>
+      37:30 Understanding Boilerplate Code <br>
+      41:22 UTF-8 <br>
+      43:12 ASCII Values <br>
+      44:18 Why Use UTF-8 <br>
+      47:19 div tag <br>
+      52:24 class & id <br>
+      58:52 Header , Main & Footer <br>
+      01:01:47 Wrapping Up <br>
+    </td>
+  </tr>
+</table>
+
+</center>
+ 
+ <hr size="4" width="100%" align="center"><!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Day03 Notes</title>
+</head>
+<body>
+
+<h3>📘 HTML Day03</h3>
+
+<hr size="4" width="100%" align="center">
+
+<h3>📂 <mark>File Path system</mark></h3>
+
+<h3>🔹 Step 1: The First Principle (The Fundamental Truth)</h3>
+<p>The most fundamental truth is this: <b>A website is not one single file.</b><br>
+It's a collection of different files (HTML, CSS, JavaScript, images, videos, fonts) organized into folders.</p>
+
+<h3>🔹 Step 2: The Core Problem</h3>
+<p>If <b>index.html</b> needs <b>logo.png</b>, how does it know where to find it?<br>
+👉 A <b>file path</b> is the <mark>address of the file</mark>.</p>
+
+<h3>🟢 A) Relative File Paths (Most Important)</h3>
+<p>A relative file path gives directions starting from the <b>current file’s location</b>. You’ll use this 99% of the time.</p>
+
+<pre>
+my-website/
+├── index.html
+├── about.html
+├── images/
+│   ├── logo.png
+│   └── hero.jpg
+└── pages/
+    ├── contact.html
+    └── terms.html
+</pre>
+
+<h3>✅ Scenarios</h3>
+
+<p>⭐ <b>Scenario 1: SAME Folder</b><br>
+index.html → about.html</p>
+<code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code>
+<p>✔ Just the filename.</p>
+
+<p>⭐ <b>Scenario 2: SUB-Folder (Going Down)</b><br>
+index.html → images/logo.png</p>
+<code>&lt;img src="images/logo.png" alt="Logo"&gt;</code>
+<p>✔ Folder name + / + file.</p>
+
+<p>⭐ <b>Scenario 3: PARENT Folder (Going Up)</b><br>
+contact.html → images/logo.png</p>
+<code>&lt;img src="../images/logo.png" alt="Logo"&gt;</code>
+<p>✔ <b>../</b> means go up one level, then down.</p>
+
+<h3>🟡 B) Absolute File Paths</h3>
+<p>Start with <b>http://</b> or <b>https://</b>.<br>
+Use only for external files (Google, fonts, external images).</p>
+
+<code>&lt;a href="https://www.google.com"&gt;Search on Google&lt;/a&gt;</code><br>
+<code>&lt;img src="https://upload.wikimedia.org/.../Html5_logo_and_wordmark.svg" alt="HTML5 Logo"&gt;</code>
+
+<p>⚠️ Don’t use <mark>absolute paths from your computer (C:/...)</mark>. They work only locally, not online.</p>
+
+<h3>🔒 Security Sandbox</h3>
+<p>Browsers keep your code in a <b>"sandbox prison"</b> so websites can’t read your private files.</p>
+
+<h3>📌 Summary / Rules of Thumb</h3>
+<ul>
+  <li>🟢 Own files → <b>Relative</b> paths</li>
+  <li>🌐 External files → <b>Absolute</b> paths</li>
+</ul>
+
+<h3>💻 Windows vs macOS/Linux Absolute Paths</h3>
+
+<table border="1" cellpadding="6">
+<tr><th>Feature</th><th>Windows</th><th>macOS / Linux</th></tr>
+<tr><td>Starting Point</td><td>Drive Letter (C:\)</td><td>Root /</td></tr>
+<tr><td>Separator</td><td>\ (Backslash)</td><td>/ (Forward Slash)</td></tr>
+<tr><td>Example</td><td>C:\Users\John\Docs\file.txt</td><td>/Users/john/Docs/file.txt</td></tr>
+</table>
+
+<hr size="4" width="100%" align="center">
+
+<h3>⚡ HTML Boilerplate Code</h3>
+
+<h3>🔹 Step 1: The Principle</h3>
+<p>A browser needs <b>setup info</b> (doctype, language, encoding, viewport, title) before showing content.</p>
+
+<h3>🔹 Step 2: The Solution</h3>
+<p>We use a standard <b>boilerplate</b> — a universal starting template.</p>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h3>✅ Why Use Boilerplate?</h3>
+<ul>
+  <li>✔ Avoids <mark>Quirks Mode</mark></li>
+  <li>✔ Prevents <b>broken characters</b></li>
+  <li>✔ Ensures <b>mobile-friendly</b> design</li>
+  <li>✔ Helps <b>SEO & Accessibility</b></li>
+</ul>
+
+<hr size="4" width="100%" align="center">
+
+<h3>🌐 Multipage Website</h3>
+<p>Complex sites → multiple pages (About, Services, Contact).<br>
+We need <b>navigation</b> + <b>shared layout</b>.</p>
+
+<h3>📦 The &lt;div&gt; (Generic Box)</h3>
+<p>Groups elements together. Example: profile card (image + name + bio).</p>
+
+<h3>🏷️ class & id (Labels)</h3>
+<ul>
+  <li><b>id</b> → unique (like Aadhaar Number)</li>
+  <li><b>class</b> → reusable (like Job Title)</li>
+</ul>
+
+<h3>🖊️ &lt;span&gt; (Inline Highlighter)</h3>
+<p>Use for highlighting text inside a line → doesn’t break layout.</p>
+
+<h3>📑 Semantic Tags</h3>
+<ul>
+  <li>🔝 <b>&lt;header&gt;</b> → top section (logo, nav)</li>
+  <li>📌 <b>&lt;main&gt;</b> → unique main content (only one per page)</li>
+  <li>🔚 <b>&lt;footer&gt;</b> → bottom info (copyright, contact)</li>
+</ul>
+
+</body>
+</html>

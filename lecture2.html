@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lecture - HTML Basics</title>
+</head>
+<body>
+  <center>
+    <h1>Lecture 2</font> &#9733;</h1>
+    <hr size="4" width="50%" align="center">
+    <h2>Video of expert so that you can understand easly</h2>
+    <table border="1" cellspacing="10" cellpadding="10">
+      <tr>
+        <td>
+          <div style="text-align:center;">
+          <a href="https://www.youtube.com/watch?v=GkZN_-HMCJ8&t=1856s" target="_blank">
+          <button>▶ Watch Video</button>
+          </a>
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>Timestamps:</b><br><br>
+          00:00 Introduction <br>
+          00:51 What is HTML? <br>
+          01:04 World First Website <br>
+          01:26 The Concept of Hyperlinks <br>
+          03:01 What is a Markup Language? <br>
+          03:16 Installing & Setting Up a Code Editor <br>
+          05:55 Creating Your First Webpage <br>
+          08:25 Understanding Tags <br>
+          08:51 What is Heading <br>
+          09:07 What is Paragraph Tag (Quick Example) <br>
+          10:02 Types of Heading Tags <br>
+          17:14 The Paragraph Tag <br>
+          18:49 What is an Element? <br>
+          19:22 Horizontal Rule (hr) <br>
+          20:04 Line Break (br) <br>
+          21:20 Introduction to HTML Lists <br>
+          21:51 Types of Lists (Ordered & Unordered) <br>
+          23:33 Creating Hyperlinks <br>
+          23:41 Adding Comments in HTML <br>
+          24:30 The Anchor Tag (a) <br>
+          26:08 Attributes Explained <br>
+          26:52 Adding Images (img) <br>
+          29:56 Mini Project <br>
+          37:18 Wrapping Up the Video
+        </td>
+      </tr>
+    </table>
+  </center>
+  <hr size="4" width="100%" align="center">
+  <img src="https://www.ionos.com/digitalguide/fileadmin/_processed_/0/d/csm_html-tagst_9c34285cd8.webp" height="300" width="800">
+    <h2>HTML: Hyper Text Markup Language</h2>
+    <ul type="square">
+    <li><b>HyperText:</b> It means linking one webpage to another using links.</li>
+    <li><b>Markup Language:</b> It means using tags to give structure and meaning to text.</li>
+  </ul>
+
+  <h3>Key Points:</h3>
+  <ul type="circle">
+    <li>HTML is used to create web pages.</li>
+    <li>It makes plain text more meaningful with tags.</li>
+    <li>It connects information on the web.</li>
+    <img src="16.png" alt="Description of image" width="800" height="600">
+  </ul>
+  <h3>
+    Visit the first HLML website ever made here:  
+    <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">
+      <button>First Website</button>
+    </a>
+  </h3>
+
+  <hr size="5" width="100%" align="center">
+  <title>Install Required Software</title>
+</head>
+<body>
+  <h2 style="text-align:center;">Install Required Software</h2>
+
+  <table border="1" cellspacing="10" cellpadding="10" align="center">
+    <tr>
+      <th>Step</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th>Link</th>
+    </tr>
+    
+    <tr>
+      <td>1</td>
+      <td>Install Visual Studio Code</td>
+      <td>
+        <img src="https://cdn.neowin.com/news/images/uploaded/2023/07/1688749943_vscode_story.jpg" alt="VS Code" width="100">
+      </td>
+      <td>
+        <a href="https://code.visualstudio.com/" target="_blank">
+          <button>Download VS Code</button>
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Extension: Live Preview</td>
+      <td>
+        <img src="https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/live-server/0.5.2025091101/1757610462402/Microsoft.VisualStudio.Services.Icons.Default" alt="Live Preview" width="100">
+      </td>
+      <td>
+        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server" target="_blank">
+          <button>Live Preview</button>
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>Extension: Prettier<br>Code formatter to make your code neat.</td>
+      <td>
+        <img src="https://esbenp.gallerycdn.vsassets.io/extensions/esbenp/prettier-vscode/11.0.0/1723648421534/Microsoft.VisualStudio.Services.Icons.Default" alt="Prettier" width="100">
+      </td>
+      <td>
+        <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">
+          <button>Prettier</button>
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>Extension: Live Server<br>Launch a development server with live reload.</td>
+      <td>
+        <img src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1736542717282/Microsoft.VisualStudio.Services.Icons.Default" alt="Live Server" width="100">
+      </td>
+      <td>
+        <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">
+          <button>Live Server</button>
+        </a>
+      </td>
+    </tr>
+  </table>
+    <hr size="5" width="100%" align="center">
+    <title>HTML Headings</title>
+
+    <h2>1: The Heading (&lt;h1&gt; to &lt;h6&gt;)</h2>
+
+    <p><b>What it is:</b> Headings are tags used to define titles and subtitles on a webpage. 
+    They help create a clear structure and outline for your content.</p>
+
+    <h3>Examples:</h3>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <center>
+      <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_headers" target="_blank">
+        <input type="button" value="👉 Try it Youself" width="100" height="100">
+      </a>
+    </center>
+
+
+  <h3>Explanation:</h3>
+  <img src="17.png" alt="Description of image">
+  
+
+  <p><b>The Purpose:</b> Headings are used to organize content logically.  
+  They are not just for making text bigger — they show importance and structure, which helps both people and search engines understand your page.</p>
+  <hr size="5" width="100%" align="center">
+
+  <h2>2: The Paragraph (&lt;p&gt;)</h2>
+
+  <h3>What it is:</h3>
+  <p>The paragraph tag is the most common tag you'll use. It is for grouping sentences and blocks of text together.</p>
+
+  <h3>The Tag:</h3>
+   <center>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1" target="_blank">
+        <input type="button" value="👉 Try it Youself" >
+      </a>
+    </center>
+   
+  <p>&lt;p&gt;</p>
+
+  <h3>The Purpose:</h3>
+  <p>
+    To define a distinct paragraph of text. Browsers automatically add some space before and 
+    after a &lt;p&gt; element, separating it from other content.
+    <img src="18.png" alt="Description of image" width="1000" height="800">
+  </p>
+  <p>
+    Instead of using multiple line breaks (&lt;br&gt;), you should use multiple &lt;p&gt; tags 
+    for separate paragraphs.
+  </p>
+
+  <h3>Example:</h3>
+  <p>This is the first paragraph. It contains several sentences about a topic.</p>
+  <p>This is a second, separate paragraph. The browser will display it with a space between.</p>
+  <hr size="5" width="100%" align="center">
+
+
+
+  <h2>3: HTML Horizontal Rules</h2>
+
+  <h3>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</h3>
+  <center>
+      <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_hr_test" target="_blank">
+        <input type="button" value="👉 Try it Youself" >
+      </a>
+    </center>
+  <img src="19.png" alt="Description of image" width="800" height="600">
+
+  <h3>The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page.</h3>
+  <hr size="5" width="100%" align="center">
+
+
+
+  <h2>4: The Line Break Tag: &lt;br&gt;</h2>
+   <img src="https://images.shiksha.com/mediadata/images/articles/1701843373phpTRfV3z.jpeg" height="500" width="800">
+
+  <h3>What it is:</h3>
+  <p>
+    The &lt;br&gt; tag tells the browser, "Stop writing on this line and immediately start on the next one." 
+    It's like hitting the Enter key once in a poem or an address.
+  </p>
+
+  <h3>Purpose:</h3>
+  <p>Creates a single line break in the text.</p>
+   <center>
+      <a href="http://w3schools.com/tags/tryit.asp?filename=tryhtml_br" target="_blank">
+        <input type="button" value="👉 Try it Youself" >
+      </a>
+    </center>
+
+  <h3>Example:</h3>
+  <pre>
+  This is the first line.&lt;br&gt;
+  This is the second line.
+  </pre>
+  <hr size="5" width="100%" align="center">
+
+  <h2>5: List Elements (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</h2>
+
+  <h3>What it is:</h3>
+  <p>
+    These tags are used to create lists. This is a perfect example of nesting.
+  </p>
+
+  <h3>The Tags:</h3>
+  <ul type="square">
+    <li><b>&lt;ul&gt;</b>: An <b>U</b>nordered <b>L</b>ist. It creates a bulleted list.</li>
+    <li><b>&lt;ol&gt;</b>: An <b>O</b>rdered <b>L</b>ist. It creates a numbered list.</li>
+    <li><b>&lt;li&gt;</b>: A <b>L</b>ist <b>I</b>tem. Each item in either type of list must be wrapped in an &lt;li&gt; tag.</li>
+  
+   <h2 align="center">Practice HTML Lists</h2>
+
+    <p align="center">
+      <b>Unordered List:</b><br>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered2" target="_blank">
+        <input type="button" value="👉 Practice Unordered List" size="30">
+      </a>
+    </p>
+
+    <p align="center">
+      <b>Ordered List:</b><br>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered2" target="_blank">
+        <input type="button" value="👉 Practice Ordered List" size="30">
+      </a>
+    </p>
+
+    <p align="center">
+      <b>HTML List Introduction:</b><br>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_intro" target="_blank">
+      <input type="button" value="👉 Practice Lists" size="30">
+      </a>
+    </p>
+    <img src="20.png" alt="Description of image" width="800" height="600">
+  </ul>
+
+<h3>The Purpose:</h3>
+<p>To group related items together in a list format.</p>
+
+<h3>Example (Nesting in action):</h3>
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;Item 1
+    &lt;ul&gt;
+      &lt;li&gt;Subitem 1&lt;/li&gt;
+      &lt;li&gt;Subitem 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<p>The &lt;li&gt; elements are nested as children inside the &lt;ul&gt; parent.</p>
+
+<hr size="5" width="100%" align="center">
+
+  <h2>6: The Anchor Tag (&lt;a&gt;)</h2>
+
+  <h3>What it is:</h3>
+  <p>
+    The Anchor tag is what makes the web "hypertext." It is used to create a hyperlink to 
+    another webpage, a file, or a location within the same page.
+  </p>
+      <div align="center">
+   <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_test" target="_blank">
+      <input type="button" value="👉 Practice Here">
+    </a>
+  </div>
+
+<h3>The Tag:</h3>
+<p>&lt;a&gt;</p>
+
+<h3>The Purpose:</h3>
+<p>
+  To make text (or an image) clickable, allowing users to navigate. It requires an 
+  <b>attribute</b> called <b>href</b> (hypertext reference) to specify the destination URL.
+</p>
+
+<h3>HTML Links - The target Attribute</h3>
+<p>
+  By default, the linked page will be displayed in the current browser window. To change this, 
+  you must specify another target for the link.
+</p>
+
+<p>
+  The <b>target</b> attribute specifies where to open the linked document. It can have one of the following values:
+</p>
+
+<ul type="square">
+  <li><b>_self</b> - Default. Opens the document in the same window/tab as it was clicked.</li>
+  <li><b>_blank</b> - Opens the document in a new window or tab.</li>
+  
+</ul>
+
+<hr size="5" width="100%" align="left">
+
+
+<h2>8: The Image Tag (&lt;img&gt;)</h2>
+
+<h3>What it is:</h3>
+<p>
+  The Image tag is a <b>self-closing tag</b> used to embed an image onto your page.
+</p>
+
+<h3>The Tag:</h3>
+<p>&lt;img&gt;</p>
+<div align="center">
+  <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_test" target="_blank">
+    <input type="button" value="👉 Practice Image Tag Here">
+  </a>
+</div>
+
+<h3>The Purpose:</h3>
+<p>
+  To display a visual image. It requires two main attributes:
+</p>
+
+<ul type="circle">
+  <li><b>src</b> (source): The path or URL to the image file. This is mandatory.</li>
+  <li><b>alt</b> (alternative text): A description of the image. This is vital for accessibility (screen readers will read this out) and for when the image fails to load.</li>
+</ul>
+<img src="21.png" alt="Description of image" width="600" height="600">
+
+
+</body>
+</html>
